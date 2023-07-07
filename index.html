@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(101, 253, 218);
+            color: rgb(5, 63, 6);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(26, 227, 160);
+            font-size: 20px;
+            height: 55px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+
+
+        }
+
+        .left {
+            font-size: 40px;
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            margin: 60px 0;
+            padding: 25px 0;
+            font-size: 2rem;
+
+        }
+
+
+
+        .rightsection img {
+            width: 105%;
+            margin-top: 25px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 20px;
+        }
+
+        .green {
+            color: rgb(7, 190, 7);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(5, 63, 6);
+        }
+
+        nav ul li a:hover {
+            font-size: 1.4rem;
+            color: blue;
+
+        }
+
+        #element {
+            color: rgb(7, 190, 7);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(7, 190, 7);
+            height: 2px;
+            margin: 30px 90px;
+        }
+
+        .secondsection .box {
+            height: 2px;
+            width: 80vw;
+            background-color: rgb(7, 190, 7);
+            margin: 70px 0px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            background-color: rgb(7, 190, 7);
+            height: 93px;
+            width: 1.4px;
+            margin: 0px 100px;
+
+
+
+        }
+
+        .image-top {
+            width: 32px;
+            position: relative;
+            top: -39px;
+            left: -19px;
+        }
+
+        .vertical-text {
+            width: 180px;
+            position: relative;
+            top: 58px;
+            left: -46px;
+        }
+
+
+        .vertical-desk {
+            position: relative;
+            top: 75px;
+            color: rgb(7, 190, 7);
+            font-size: 9px;
+            width: 140px;
+            left: -46px;
+        }
+
+        .image-top-youtube {
+            width: 75px;
+            position: relative;
+            top: -59px;
+            left: -35px;
+        }
+
+        .image-top-twitter {
+            width: 55px;
+            position: relative;
+            top: -45px;
+            left: -29px;
+        }
+
+        .vertical-text-youtube {
+            width: 180px;
+            position: relative;
+            top: 15px;
+            left: -46px;
+        }
+
+        .vertical-desk-youtube {
+            position: relative;
+            top: 28px;
+            color: rgb(7, 190, 7);
+            font-size: 9px;
+            width: 140px;
+            left: -46px;
+        }
+
+        .vertical-text-facebook {
+            width: 200px;
+            position: relative;
+            top: 58px;
+            left: -46px;
+        }
+
+        .vertical-desk-facebook {
+            position: relative;
+            top: 75px;
+            color: rgb(7, 190, 7);
+            font-size: 9px;
+            width: 140px;
+            left: -46px;
+        }
+
+        .vertical-text-instagram {
+            width: 200px;
+            position: relative;
+            top: 58px;
+            left: -66px;
+        }
+
+        .vertical-desk-instagram {
+            position: relative;
+            top: 75px;
+            color: rgb(7, 190, 7);
+            font-size: 9px;
+            width: 150px;
+            left: -66px;
+        }
+
+        .vertical-text-twitter {
+            width: 200px;
+            position: relative;
+            top: 50px;
+            left: -56px;
+        }
+
+        .vertical-desk-twitter {
+            position: relative;
+            top: 65px;
+            color: rgb(7, 190, 7);
+            font-size: 9px;
+            width: 150px;
+            left: -56px;
+        }
+
+        footer {
+            background-color: rgb(26, 227, 160);
+            height: 250px;
+            padding: 50px 122px;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 200px;
+        }
+
+        .footer-right {
+            text-align: center;
+            width: 500px;
+            padding: 70px 290px;
+            color: rgb(7, 190, 7);
+        }
+
+        .button .btn {
+            text-decoration: none;
+            padding: 10px;
+            margin: 2px 4px;
+            background-color: rgb(26, 227, 160);
+            border: 2px solid rgb(7, 190, 7);
+            border-radius: 5px;
+            cursor: pointer;
+
+
+        }
+
+        .button .btn a:hover {
+            padding: -10px;
+            color: blue;
+            font-size: 0.905rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Prachee's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi! My name is <span class="green">Prachee</span>.
+                <div>
+                    I am a professional
+                    <div><span id="element">Software Developer.</span></div>
+                    <div class="button">
+                        <button class="btn"><a> Download Resume</a> </button>
+                        <button class="btn"><a> View Github</a></button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="portfoli0_image-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="html-removebg-preview.png" alt="" class="image-top">
+                    <div class="vertical-text">HTML Developer (2010-2012)</div>
+                    <div class="vertical-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo
+                        eligendi delectus id. Alias saepe explicabo incidunt, aspernatur ea eveniet deleniti suscipit?
+                        Nulla.</div>
+
+                </div>
+                <div class="vertical">
+                    <img src="Instagram-removebg-preview.png" alt="" class="image-top">
+                    <div class="vertical-text-instagram">Node.js Developer Instagram (2012-2014)</div>
+                    <div class="vertical-desk-instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Provident illo
+                        eligendi delectus id. Alias saepe explicabo incidunt, aspernatur ea eveniet deleniti suscipit?
+                        Nulla.</div>
+                </div>
+                <div class="vertical">
+                    <img src="twitter-removebg-preview.png" alt="" class="image-top-twitter">
+                    <div class="vertical-text-twitter">HTML Developer Twitter (2014-2016)</div>
+                    <div class="vertical-desk-twitter">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Provident illo
+                        eligendi delectus id. Alias saepe explicabo incidunt, aspernatur ea eveniet deleniti suscipit?
+                        Nulla.</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="youtube.jpeg" alt="" class="image-top-youtube">
+                    <div class="vertical-text-youtube">Software Developer Youtube(2016-2018)</div>
+                    <div class="vertical-desk-youtube">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Provident illo
+                        eligendi delectus id. Alias saepe explicabo incidunt, aspernatur ea eveniet deleniti suscipit?
+                        Nulla.</div>
+                </div>
+                <div class="vertical">
+                    <img src="facebook.jpeg" alt="" class="image-top">
+                    <div class="vertical-text-facebook">Software Developer Facebook(2018-Present)</div>
+                    <div class="vertical-desk-facebook">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Provident illo
+                        eligendi delectus id. Alias saepe explicabo incidunt, aspernatur ea eveniet deleniti suscipit?
+                        Nulla.</div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Prachee's Developer Portfolio</h3>
+            </div>
+            <div class="footer-Second">
+                <ul>
+                    <li>Home </li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home </li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home </li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">Copyright&#169;www.pracheeportfolio.com | All Rights Reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software developer', 'Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+
+        });
+    </script>
+
+
+</body>
+
+</html>
